@@ -34,6 +34,10 @@ https://github.com/subin60/lane-detection from where the treatment for lane dete
 
 https://github.com/alexstaravoitau/detecting-road-features from where the test video has been obtained.
 
+https://github.com/sudharsan-007/opencv-lane-detection
+
+https://sudharsan-007.github.io/index.html
+
 https://github.com/ablanco1950/DetectCarDistanceAndRoadLane
 
 https://github.com/ablanco1950/DetectSpeedLicensePlate_Yolov8_Filters_PaddleOCR
