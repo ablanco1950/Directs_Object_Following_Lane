@@ -3,10 +3,15 @@ Project that positions an object in a video following a road lane.
 
 Requirements:
 All the files that accompany the project and packages that, if missing, can be installed with a simple pip
+
 import numpy as np
+
 import cv2
+
 import time
+
 import math
+
 
 Execute:
 
