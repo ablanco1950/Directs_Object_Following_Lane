@@ -37,11 +37,9 @@ https://github.com/alexstaravoitau/detecting-road-features from where the test v
 https://github.com/sudharsan-007/opencv-lane-detection
 
 
-
 https://github.com/ablanco1950/DetectCarDistanceAndRoadLane
 
 https://github.com/ablanco1950/DetectSpeedLicensePlate_Yolov8_Filters_PaddleOCR
 
 https://github.com/ablanco1950/DetectSpeedLicensePlate_RoboflowAPI_Filters_PaddleOCR
 
-https://github.com/ablanco1950/DetectCarDistanceAndRoadLane
