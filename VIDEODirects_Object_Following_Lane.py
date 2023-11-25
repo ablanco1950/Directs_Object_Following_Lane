@@ -1,4 +1,16 @@
 # -*- coding: utf-8 -*-
+# 
+OptionLane=0
+# from https://github.com/alexstaravoitau/detecting-road-features
+dirVideo="project_video.mp4"
+# from https://github.com/alifiroozidev/lane-decection-sample-footages
+#dirVideo="solidYellowLeft.mp4"
+
+
+# videos that works with OptionLane=1
+# https://github.com/alifiroozidev/lane-decection-sample-footages
+#dirVideo="solidWhiteRight.mp4"
+#dirVideo="road_-_28287 (540p).mp4"
 
 
 import cv2
@@ -29,7 +41,7 @@ lenthRegion=4.5 #the depth of the considered region corresponds
 # https://github.com/subin60/lane-detection
 # https://medium.com/@subin60/detecting-lane-lines-using-computer-vision-techniques-in-python-a-hands-on-experience-badcc6f01933
 #
-def process_frame(image):
+def process_frame(image):    
     # Convert the input image to HLS color space
     #image1=image.resize((1280,720))
     image_hls = cv2.cvtColor(image, cv2.COLOR_RGB2HLS)
@@ -62,7 +74,8 @@ def process_frame(image):
     masked_image_gray_blur_edge_detec = cv2.Canny(masked_image_gray_blur, 50, 150)
     #cv2.imshow(" edge_detec",  masked_image_gray_blur_edge_detec)
     #cv2.waitKey(0)
-    
+
+    #masked_image_gray_blur_edge_detec = cv2.Laplacian(masked_image_gray_blur_edge_detec,cv2.CV_64F) 
 
     # Create a region of interest mask
     mask = np.zeros_like(masked_image_gray_blur_edge_detec)
@@ -94,6 +107,8 @@ def process_frame(image):
 
     #cv2.imshow("image_co",  image_co)
     #cv2.waitKey(0)
+
+    
        
     for line in hough_lines:
         
@@ -118,8 +133,11 @@ def process_frame(image):
             #length = np.sqrt(((y1 - y2) ** 2) + ((x1 - x2) ** 2))  # Calculate the length of the line
             # http://elclubdelautodidacta.es/wp/2013/03/trigonometria-en-python/
             length= math.hypot((x1 - x2),(y1 - y2))
-            #print("x1=" + str(x1)+ " y1=" + str(y1) + "x2=" + str(x2)+ " y2=" + str(y2))
+            
+            
             if length > lengthMax:
+                
+                
                 lengthMax = length
                 
                 x1max=x1
@@ -158,6 +176,8 @@ def OptionVideo(dirVideo):
     video_writer = cv2.VideoWriter('demonstration.mp4',fourcc,fps, size) 
     ContFrames=0
     ContFramesJumped=0
+    SwIni=0
+    x1Ant=0
     while (cap.isOpened()):
         ret, img = cap.read()
         if ret != True: break
@@ -170,8 +190,13 @@ def OptionVideo(dirVideo):
             else:
                ContFramesJumped=0
             """   
-            #image, x1, y1, x2, y2, m, b = process_image_video(img)
+            
             image, x1, y1, x2, y2, m, b  = process_frame(img)
+           
+           
+            if OptionLane !=0:
+               if x1 > 400: continue  # for "solidWhiteRight.mp4" 
+            
             height = image.shape[0]
             width = image.shape[1]
             #print("  height=" +str( height)+ " width=" + str(width))
@@ -204,8 +229,5 @@ def OptionVideo(dirVideo):
     video_writer.release()
     cv2.destroyAllWindows()
     
-# from https://github.com/alexstaravoitau/detecting-road-features
-         
-#dirVideo="C:\\detecting-road-features-master\\detecting-road-features-master\\data\\video\\project_video.mp4"
-dirVideo="project_video.mp4"
+
 OptionVideo(dirVideo)
