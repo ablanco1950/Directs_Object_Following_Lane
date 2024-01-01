@@ -62,3 +62,6 @@ https://github.com/ablanco1950/DetectSpeedLicensePlate_Yolov8_Filters_PaddleOCR
 
 https://github.com/ablanco1950/DetectSpeedLicensePlate_RoboflowAPI_Filters_PaddleOCR
 
+https://rollbar.com/blog/python-typeerror-nonetype-object-is-not-iterable/
+
+http://elclubdelautodidacta.es/wp/2013/03/trigonometria-en-python/
