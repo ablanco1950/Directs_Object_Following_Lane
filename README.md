@@ -34,7 +34,9 @@ In this project, the driver's lane is not followed but rather the adjacent one t
 
 01/01/2024
 A program is incorporated that detects the lane on a low-performance video and in nighttime conditions and vertical trees, streetlights on the sides of the lane that can be detected as lines:
+
 VIDEODirects_Object_Following_Lane-PoorVisibilityConditions.py
+
 The success is achieved by adjusting the parameters corresponding to ROI, region of interest, and mask with thresold of the color to be detected (the white of the lane) and adding a filter based on cv2.hconcat in the process.
 
 
