@@ -33,7 +33,13 @@ Like all video monitoring projects of a highway lane, it is favored because the 
 In this project, the driver's lane is not followed but rather the adjacent one to the right, but as the lane detection is based on the treatment developed in the project https://github.com/subin60/lane-detection with some adaptations and simplifications , there is a favor in the detection of this lane that the driver is following.
 
 01/01/2024
-A program is incorporated that detects the lane on a low-performance video and in nighttime conditions and vertical trees, streetlights on the sides of the lane that can be detected as lines:
+=========
+
+A program is incorporated that detects the lane on a low-performance video and in nighttime conditions and vertical trees, streetlights on the sides of the lane that can be detected as lines.
+
+Furthermore, the video was not obtained from a vehicle following the lane, but rather intentionally moving away from and approaching the lane.
+
+At times when the lane line is not detected, it stops and waits until it is detected again.
 
 VIDEODirects_Object_Following_Lane-PoorVisibilityConditions.py
 
