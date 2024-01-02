@@ -45,6 +45,9 @@ VIDEODirects_Object_Following_Lane-PoorVisibilityConditions.py
 
 The success is achieved by adjusting the parameters corresponding to ROI, region of interest, and mask with thresold of the color to be detected (the white of the lane) and adding a filter based on cv2.hconcat in the process.
 
+In case it's of interest, a program that cuts videos obtained on a mobile phone is also attached.
+
+RecortaVideos.py 
 
 References:
 
@@ -65,3 +68,6 @@ https://github.com/ablanco1950/DetectSpeedLicensePlate_RoboflowAPI_Filters_Paddl
 https://rollbar.com/blog/python-typeerror-nonetype-object-is-not-iterable/
 
 http://elclubdelautodidacta.es/wp/2013/03/trigonometria-en-python/
+
+https://levelup.gitconnected.com/opencv-python-reading-and-writing-images-and-videos-ed01669c660c
+
