@@ -49,6 +49,14 @@ In case it's of interest, a program that cuts videos obtained on a mobile phone 
 
 RecortaVideos.py 
 
+Also, in case of interest, a simple light detector is attached.
+
+Light detectorVIDEOContours.py
+
+All programs produce a video as output: demonstration.mp4
+
+with the results
+
 References:
 
 https://github.com/subin60/lane-detection from where the treatment for lane detection has been obtained with some adaptations and simplifications. This treatment can clearly be improved and will be sought in subsequent editions.
