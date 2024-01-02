@@ -53,7 +53,9 @@ Also, in case of interest, a simple light detector is attached.
 
 Light detectorVIDEOContours.py
 
-All programs produce a video as output: demonstration.mp4
+All programs produce a video as output:
+
+demonstration.mp4
 
 with the results
 
@@ -78,4 +80,6 @@ https://rollbar.com/blog/python-typeerror-nonetype-object-is-not-iterable/
 http://elclubdelautodidacta.es/wp/2013/03/trigonometria-en-python/
 
 https://levelup.gitconnected.com/opencv-python-reading-and-writing-images-and-videos-ed01669c660c
+
+https://stackoverflow.com/questions/67302143/opencv-python-how-to-detect-filled-rectangular-shapes-on-picture
 
