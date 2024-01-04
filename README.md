@@ -45,6 +45,13 @@ VIDEODirects_Object_Following_Lane-PoorVisibilityConditions.py
 
 The success is achieved by adjusting the parameters corresponding to ROI, region of interest, and mask with thresold of the color to be detected (the white of the lane) and adding a filter based on cv2.hconcat in the process.
 
+worse results (fewer hit lines) and slower if executed:
+VIDEODirects_Object_Following_Lane-PoorVisibilityConditions_FSRCNN.py
+in  the last step uses Tensorflow implementation of 'Accelerating the Super-Resolution Convolutional Neural Network' (https://github.com/Saafke/FSRCNN_Tensorflow) from:
+
+https://github.com/Saafke/FSRCNN_Tensorflow.
+
+
 In case it's of interest, a program that cuts videos obtained on a mobile phone is also attached.
 
 RecortaVideos.py 
@@ -82,4 +89,6 @@ http://elclubdelautodidacta.es/wp/2013/03/trigonometria-en-python/
 https://levelup.gitconnected.com/opencv-python-reading-and-writing-images-and-videos-ed01669c660c
 
 https://stackoverflow.com/questions/67302143/opencv-python-how-to-detect-filled-rectangular-shapes-on-picture
+
+https://github.com/Saafke/FSRCNN_Tensorflow
 
