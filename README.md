@@ -45,7 +45,11 @@ VIDEODirects_Object_Following_Lane-PoorVisibilityConditions.py
 
 The success is achieved by adjusting the parameters corresponding to ROI, region of interest, and mask with thresold of the color to be detected (the white of the lane) and adding a filter based on cv2.hconcat in the process.
 
-worse results (fewer hit lines) and slower if executed:
+Similar results are obtained by executing:
+VIDEODirects_Object_Following_Lane-PoorVisibilityConditions_filter2D.py
+in which a treatment and an additional filter cv2.filter2d from [https://medium.com/practical-data-science-and-engineering](https://medium.com/practical-data-science-and-engineering/image-kernels-88162cb6585d) are added to the general procedure outlined in https://github.com/subin60/lane-detection /image-kernels-88162cb6585d
+
+Worse results (fewer hit lines) and slower if executed:
 VIDEODirects_Object_Following_Lane-PoorVisibilityConditions_FSRCNN.py
 in  the last step uses Tensorflow implementation of 'Accelerating the Super-Resolution Convolutional Neural Network' (https://github.com/Saafke/FSRCNN_Tensorflow) from:
 
@@ -66,7 +70,7 @@ demonstration.mp4 with the results
 
 References:
 
-https://github.com/subin60/lane-detection from where the treatment for lane detection has been obtained with some adaptations and simplifications. This treatment can clearly be improved and will be sought in subsequent editions.
+https://github.com/subin60/lane-detection from where the treatment for lane detection has been obtained with some adaptations and simplifications. This treatment can clearly be improved and will be sought in subsequent editions. As of 01/01/2024, additional filters will be incorporated into this treatment that allow lane detection in cases of: poor quality videos, visibility, nearby trees... instead of the usual ones that are presented in lane detection projects.
 
 https://github.com/alexstaravoitau/detecting-road-features from where the main  test video project_video.mp4 has been obtained.
 
@@ -89,4 +93,6 @@ https://levelup.gitconnected.com/opencv-python-reading-and-writing-images-and-vi
 https://stackoverflow.com/questions/67302143/opencv-python-how-to-detect-filled-rectangular-shapes-on-picture
 
 https://github.com/Saafke/FSRCNN_Tensorflow
+
+https://medium.com/practical-data-science-and-engineering/image-kernels-88162cb6585d
 
