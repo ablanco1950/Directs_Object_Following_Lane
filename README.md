@@ -62,9 +62,7 @@ Light detectorVIDEOContours.py
 
 All programs produce a video as output:
 
-demonstration.mp4
-
-with the results
+demonstration.mp4 with the results
 
 References:
 
